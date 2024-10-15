@@ -1,2 +1,114 @@
 <!DOCTYPE html>
-s
+<html>
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body, h1 {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        img {
+            margin-bottom: -7px;
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px;
+        }
+
+        /* Flexbox for full-width collage */
+        .collage-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            gap: 30px;
+            margin-bottom: 128px;
+        }
+
+        .collage-img {
+            flex: 1 1 calc(20% - 10px); /* Images take up 20% width minus the gap */
+            object-fit: cover;
+            height: 200px; /* Set a uniform height for the images */
+        }
+
+        @media (max-width: 600px) {
+            .collage-img {
+                flex: 1 1 calc(50% - 10px); /* For smaller screens, 2 images per row */
+                height: 150px; /* Adjust height for smaller screens */
+            }
+        }
+
+        #mainimg {
+            height: 30%;
+            width: 40%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+        <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+        <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+        <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+        <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+        <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+    </div>
+</nav>
+
+<div class="w3-content" style="max-width:1500px">
+
+     <!-- Header -->
+    <div class="w3-opacity">
+        <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </span>
+        <div class="w3-clear"></div>
+        <header class="w3-center w3-margin-bottom">
+            <h1><b>Take a Look at Past Trunks!</b></h1>
+            <p><b>A template made by w3.css for photographers.</b></p>
+            <p class="w3-padding-16">
+                <button class="w3-button w3-black" id="togglePaddingBtn">Toggle Grid Padding</button>
+            </p>
+        </header>
+    </div>
+
+    <!-- Photo Collage 1-->
+    <div class="collage-container" id="myGrid">
+        <img src="IMG_0464.jpg" class="collage-img">
+        <img src="IMG_0467(1).jpg" class="collage-img">
+        <img src="IMG_8446(1).jpg" class="collage-img">
+    </div>
+
+    <!-- Photo Collage 2-->
+    <div class="collage-container">
+        <img src="IMG_9152(1).jpg" class="collage-img">
+        <img src="IMG_9107(1).jpg" class="collage-img">
+    </div>
+    <!-- MAKE FADE IN AND OUT ITS A REQUIREMENT -->
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+        <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FMarlboroHSMustangs%2F" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a> 
+        <a href="https://www.instagram.com/explore/locations/264036373/marlboro-high-school/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://twitter.com/MarlboroHSinNJ?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/company/marlboro-township-public-schools" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <p class="w3-medium">Powered by <a href="https://marlboro.frhsd.com/" target="_blank" class="w3-hover-text-purple">Marlboro Highschool</a></p>
+    </footer>
+</div>
+
+
+
+</body>
+</html>

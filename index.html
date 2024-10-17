@@ -9,49 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body, h1 {
-            font-family: "Montserrat", sans-serif;
-        }
 
-        img {
-            margin-bottom: -7px;
-        }
-
-        .w3-row-padding img {
-            margin-bottom: 12px;
-        }
-
-        /* Flexbox for full-width collage */
-        .collage-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between; 
-            gap: 30px;
-            margin-bottom: 128px;
-        }
-
-        .collage-img {
-            flex: 1 1 calc(20% - 10px); /* Images take up 20% width minus the gap */
-            object-fit: cover;
-            height: 200px; /* Set a uniform height for the images */
-        }
-
-        @media (max-width: 600px) {
-            .collage-img {
-                flex: 1 1 calc(50% - 10px); /* For smaller screens, 2 images per row */
-                height: 150px; /* Adjust height for smaller screens */
-            }
-        }
-
-        #mainimg {
-            height: 30%;
-            width: 40%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
@@ -67,16 +25,10 @@
 
 <div class="w3-content" style="max-width:1500px">
 
-     <!-- Header -->
-    <div class="w3-opacity">
-        <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()">
-            <i class="fa fa-bars"></i>
-        </span>
-        <div class="w3-clear"></div>
         <header class="w3-center w3-margin-bottom">
             <h1><b>Trick or Treat with MHS!</b></h1>
         </header>
-    </div>
+
     <img src="thumbnail_Black Orange and Violet Halloween Calendar of Events Flyer.png" id="flyer">
     <script>
         $(document).ready(function(){
@@ -85,19 +37,30 @@
           });
         });
         </script>
-               
-        <h2>Event Highlights:
-            Free Event – Donations will be collected for the American Cancer Society.
-            Ages: 12 and under.
-            Nut-Free Event – Please ensure no food containing nuts.
-            Music & Fun Activities – Enjoy great music, games, and more.
-            Face Painting (To be confirmed with Lauren Fraser).
-            Vendors:
-            Feds on the Go – Snacks available for purchase.
-            Visit Website
-            Goldy’s Ice Cream – Delicious ice cream for sale.
-            Visit Website
-            </h2>
+          <div id="aboutsec">  
+        <h2>About Event: </h2>
+        <ul class="no-bullets">
+                <li>Free Event – Donations will be collected for the American Cancer Society.</li>
+                <li>            Ages: 12 and under</li>
+                <li>              Nut-Free Event: Please ensure no food containing nuts.</li>
+                <li>            Music & Fun Activities – Enjoy great music, games, and more.                </li>
+                <li>Face Painting (To be confirmed with Lauren Fraser).</li>
+                <li>            Ages: 12 and under</li>
+                <li>            Ages: 12 and under</li>
+        </ul>
+        <h2>Vendors: </h2>
+<ul class="no-bullets">
+<li>              Feds on the Go – Snacks available for purchase.</li>
+
+</ul>
+
+            
+            
+            <h2>Visit Website:</h2>
+            <ul class="no-bullets">
+                <li>Goldy’s Ice Cream – Delicious ice cream for sale.</li>
+            </ul>
+        </div>   
         <button id="button2">Toggle Descriptions</button>
 
     

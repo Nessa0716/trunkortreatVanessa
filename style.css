@@ -6,6 +6,7 @@ h1 {
     font-family: "Montserrat", sans-serif;
     text-shadow: 2px 2px #ffa600a9;
     text-align: center;
+    color:rgb(255, 255, 255)
 
 }
 p {
@@ -37,12 +38,7 @@ img {
     height: 200px; /* Set a uniform height for the images */
 }
 
-@media (max-width: 600px) {
-    .collage-img {
-        flex: 1 1 calc(50% - 10px); /* For smaller screens, 2 images per row */
-        height: 150px; /* Adjust height for smaller screens */
-    }
-}
+
 
 #mainimg {
     height: 30%;
@@ -86,13 +82,6 @@ img {
     color: black;
 }
 
-/* Responsive navbar: stack links vertically on smaller screens */
-@media screen and (max-width: 600px) {
-    .navbar a {
-        float: none;
-        width: 100%;
-    }
-}
 
 h3 {
     font-family: "Montserrat", sans-serif;
@@ -104,3 +93,16 @@ h4 {
     text-align: center;
     color: rgb(255, 255, 255);
 }
+#aboutsec {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+h2 {
+    text-shadow: 2px 2px #ffa600a9;
+
+}
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }

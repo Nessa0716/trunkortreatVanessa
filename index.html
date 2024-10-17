@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>W3.CSS Template</title>
+    <title>MHS Trunk or Treat</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <style>
         body, h1 {
             font-family: "Montserrat", sans-serif;
@@ -51,21 +52,18 @@
             margin-right: auto;
         }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 <body>
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
-        <i class="fa fa-remove"></i>
-    </a>
-    <div class="w3-bar-block w3-center">
-        <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
-        <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
-        <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
-        <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
-    </div>
-</nav>
+<!-- Navbar -->
+<div class="navbar">
+    <a href="#flyer">Home</a>
+    <a href="#myGrid">Pictures</a>
+    <a href="#Schedule">Schedule</a>
+</div>
+
 
 <div class="w3-content" style="max-width:1500px">
 
@@ -76,27 +74,115 @@
         </span>
         <div class="w3-clear"></div>
         <header class="w3-center w3-margin-bottom">
-            <h1><b>Take a Look at Past Trunks!</b></h1>
-            <p><b>A template made by w3.css for photographers.</b></p>
-            <p class="w3-padding-16">
-                <button class="w3-button w3-black" id="togglePaddingBtn">Toggle Grid Padding</button>
-            </p>
+            <h1><b>Trick or Treat with MHS!</b></h1>
         </header>
     </div>
+    <img src="thumbnail_Black Orange and Violet Halloween Calendar of Events Flyer.png" id="flyer">
+    <script>
+        $(document).ready(function(){
+          $("button2").click(function(){
+            $("h2").toggle();
+          });
+        });
+        </script>
+               
+        <h2>Event Highlights:
+            Free Event – Donations will be collected for the American Cancer Society.
+            Ages: 12 and under.
+            Nut-Free Event – Please ensure no food containing nuts.
+            Music & Fun Activities – Enjoy great music, games, and more.
+            Face Painting (To be confirmed with Lauren Fraser).
+            Vendors:
+            Feds on the Go – Snacks available for purchase.
+            Visit Website
+            Goldy’s Ice Cream – Delicious ice cream for sale.
+            Visit Website
+            </h2>
+        <button id="button2">Toggle Descriptions</button>
 
+    
     <!-- Photo Collage 1-->
+
     <div class="collage-container" id="myGrid">
-        <img src="IMG_0464.jpg" class="collage-img">
-        <img src="IMG_0467(1).jpg" class="collage-img">
-        <img src="IMG_8446(1).jpg" class="collage-img">
+                    
+        <img src="IMG_0464.jpg" class="collage-img"  id="img">
+        <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("p").toggle();
+              });
+            });
+            </script>
+   
+            <p>Kids dressed as Santa Claus hand out candy from a trunk filled with Christmas decorations, complete with twinkling lights and holiday cheer. Fun fact: Even Santa loves Halloween at Trunk or Treat!</p>
+
+        <img src="IMG_0467(1).jpg" class="collage-img" id="img">
+        <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("p").toggle();
+              });
+            });
+            </script>
+              
+            <p>Little mad scientists in lab coats and goggles share colorful gelatin treats from their science lab-themed trunk, filled with bubbling beakers and fun experiments. Fun fact: These “scientists” whip up sweet, spooky treats with a twist!</p>
+
+        <img src="IMG_8446(1).jpg" class="collage-img" id="img">
+        <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("p").toggle();
+              });
+            });
+            </script>
+            
+            <p> Step right up to the circus-themed trunk, with kids dressed as clowns and ringmasters. It’s all big top fun with candy and carnival-style games! Fun fact: The greatest show on wheels comes right to the parking lot!</p>
+
     </div>
 
     <!-- Photo Collage 2-->
     <div class="collage-container">
-        <img src="IMG_9152(1).jpg" class="collage-img">
-        <img src="IMG_9107(1).jpg" class="collage-img">
+        <img src="IMG_9152(1).jpg" class="collage-img" id="img">
+        <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("p").toggle();
+              });
+            });
+            </script>
+               
+            <p> It’s playtime at the Toy Story-themed trunk! Meet characters like Buzz and Woody, while candy and toys are shared in this colorful, nostalgic setup. Fun fact: To infinity and beyond – your candy haul is waiting!</p>
+
+        <img src="IMG_9107(1).jpg" class="collage-img" id="img">
+        <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("p").toggle();
+              });
+            });
+            </script>
+                   
+            <p>Roar your way to the dinosaur-themed trunk, where kids dressed as prehistoric creatures hand out dino-sized candy! Fun fact: This trunk is a Jurassic journey back in time with sweets as the treasure!</p>
+
     </div>
+    
+    <h1 id="Schedule">Schedule</h1>
     <!-- MAKE FADE IN AND OUT ITS A REQUIREMENT -->
+     <div>
+       <h3> Date:</h3>
+       <h4>October 29th
+        Rain Date: October 30th</h4>
+        <h3>Time:</h3>
+        <h4>Setup time for Participants 3:00pm</h4>
+        <h4>Event Time 4:00 PM - 5:30 PM
+        Cleanup Time for Participants. 5:30 - 6:00 pm</h4>
+        <h3>Location:</h3>
+        <h4>Marlboro High School Parking Lot</h4>
+
+     </div>
+   
+    
+
 
     <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
